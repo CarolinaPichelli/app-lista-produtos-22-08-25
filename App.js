@@ -19,7 +19,7 @@ export default function App() {
     <ScrollView>
     <View style={styles.container}>
       {lista.map((prod) => 
-      <View style={styles.item}> 
+      <View style={styles.item} key={prod.id}> 
         <Image style={styles.image} source={{uri:prod.image}}></Image>
         <Text style={styles.title} key={prod.id}>{prod.title}</Text>
       </View> 
